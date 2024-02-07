@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap" rel="stylesheet">
+
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="./images/devchallenges.png">
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Edie Homepage Challenge</title>
+    
+  </head>
+  <body>
+    <header class="header-container">
+      <div>
+        <h1 class="heading">Edie</h1>
+      </div>
+
+      <div>
+        <nav class="option-container">
+          <ul>
+              <li><a href="#" class="header-options">Home</a></li>
+              <li><a href="#services" class="header-options">Services</a></li>
+              <li><a href="#works" class="header-options">Our Works</a></li>
+              <li><a href="#clients" class="header-options">Clients</a></li>
+              <li><a href="#contact" class="header-options">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="mobile-dropdown">
+        <div class="wrap-dropdown" onclick="toggleDropdown()">
+          <div class="menu"></div>
+          <div class="menu"></div>
+          <div class="menu"></div>
+        </div>
+        <ul id="dropdown-list">
+          <li><a href="#" class="header-options">Home</a></li>
+          <li><a href="#services" class="header-options">Services</a></li>
+          <li><a href="#works" class="header-options">Our Works</a></li>
+          <li><a href="#clients" class="header-options">Clients</a></li>
+          <li><a href="#contact" class="header-options">Contact</a></li>
+        </ul>
+      </nav>
+
+
+    </header>
+
+    <main class="main-container">
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-question">Unhappy with your website?</p>
+          <h2 class="hero-heading">We create beautiful and fast web services</h2>
+        </div>  
+        <img class="hero-img" src="./images/heroImage.jpg" alt="An employee talking about to do's in a meeting">
+        <div class="hero-content2">
+          <h2 class="hero-heading2">Story, emotion and purpose</h2>
+          <p class="hero-p">We help transform your ideas into real world applications that will outperform your toughest competition and 
+            help you achieve your strategic goals in short period of time.</p>
+          <div class="hero-contact-container">
+            <div><p class="hero-question2">Want us to contact you?</p></div>
+            <div class="contact-label">
+                <label for="email" >
+                  <span >
+                    <input
+                      type="email"
+                      name="email"
+                      id="mail"
+                      placeholder="Email"
+                      class="contact-input"
+                    />
+                    <input
+                      type="button"
+                      value="Join"
+                      class="contact-input"
+                      id="btn"
+                    />
+                  </span>
+                </label>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-info" id="services">  
+        <h2 class="services-h">We offer high demand services</h2>
+      </div>
+
+      <div class="services-card-container">  
+          <div class="services-card">
+            <div class="card-icon" id="first">
+              <i class="material-icons">edit</i>
+            </div>
+
+            <p class="services-title">
+              UI/UX Design
+            </p>
+
+            <p class="services-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+            </p>
+
+            <input type="button" value="Get started" class="start-btn">
+
+          </div>
+
+          <div class="services-card">
+            <div class="card-icon" id="second">
+              <i class="material-icons">code</i>
+            </div>
+
+            <p class="services-title">
+              Front End
+            </p>
+
+            <p class="services-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+            </p>
+
+            <input type="button" value="Get started" class="start-btn">
+
+          </div>
+
+          <div class="services-card">
+            <div class="card-icon" id="third">
+              <i class="material-icons">storage</i>
+            </div>
+
+            <p class="services-title">
+              Back End
+            </p>
+
+            <p class="services-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+            </p>
+
+            <input type="button" value="Get started" class="start-btn">
+          </div>
+
+      </div>  
+
+      <div class="design-container" id="works">
+        <h2 class="design-h">Good design means good business</h2>
+
+        <div class="design-flex">
+
+          <div class="design-item item1">
+            <img src="./images/smarthome.jpg" alt="smart home img">
+            <p class="app-p">Full stack application</p>
+            <p class="project-p">Smart home dashboard</p>
+          </div>
+
+          <div class="design-item item2">
+            <img src="./images/onboard.png" alt="onboard img">
+            <p class="app-p">UX/UI design</p>
+            <p class="project-p">Onboard application</p>
+          </div>
+
+          <div class="design-item item3">
+            <img src="./images/booking.png" alt="booking img">
+            <p class="app-p">Mobile application</p>
+            <p class="project-p">Booking system</p>
+          </div>
+
+          <div class="design-item item4">
+            <img src="./images/juice-product.png" alt="juice product img">
+            <p class="app-p">Front End application</p>
+            <p class="project-p">Juice product homepage</p>
+          </div>
+          
+        </div>
+        <button class="see-more">see more →</button>
+      </div>
+
+      <div class="meet-part">
+        <div class="meet-info">
+          <h4>Meet the team</h4>
+          <h3>We are chilled and a laidback team</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="meet-photos">
+          <img class="person1" src="./images/person1.png" alt="lady in orange ">
+          <img class="person2" src="./images/person2.png" alt="boy with a scarf">
+          <img class="person3" src="./images/person3.png" alt="smiling man">
+        </div>
+      </div>
+
+      <div class="comment-part" id="clients">
+        <div>
+          <h2>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</h2>
+        </div>
+        
+        <div class="comment-flex">
+          <img src="./images/person4.png" alt="photo of Carlos">
+          <div>
+            <h3>Carlos Tran</h3>
+            <h4>The Decorate Gatsby</h4>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer-container" id="contact">
+      <div>
+        <nav class="footer-option-container">
+          <ul>
+              <li><a href="#" class="footer-options">Home</a></li>
+              <li><a href="#services" class="footer-options">Services</a></li>
+              <li><a href="#works" class="footer-options">Our Works</a></li>
+              <li><a href="#clients" class="footer-options">Clients</a></li>
+              <li><a href="#contact" class="footer-options">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-socials-container">
+        <div>
+          <h1 class="footer-heading">Edie</h1>
+        </div>
+        <div>
+          <img src="./images/instagram.svg" alt="instagram svg">
+          <img src="./images/linkedin.svg" alt="linkedin svg">
+          <img src="./images/twitter.svg" alt="twitter svg">
+        </div>  
+      </div>
+
+      <div class="footer-contact-container">
+        <div><p class="footer-question">Want us to contact you?</p></div>
+        <div>
+            <label for="email" >
+              <span >
+                <input
+                  type="email"
+                  name="email"
+                  id="mail"
+                  placeholder="Email"
+                  class="contact-input"
+                />
+                <input
+                  type="button"
+                  value="Join"
+                  class="contact-input"
+                  id="btn"
+                />
+              </span>
+            </label>
+        </div>
+      </div>
+
+      <p class="footer">created by <strong>Korhan Aladağ</strong> - devChallenges.io</p>
+
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
